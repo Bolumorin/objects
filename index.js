@@ -80,3 +80,21 @@ console.log({bMorin3});
 const bMorin4 = JSON.parse(JSON.stringify(bMorin));
   bMorin4.faveColor = 'Still Black';
   console.log(bMorin4);
+
+//   QUESTION 5
+
+const presidentialCandidates ={
+     AAC : 'Omoyele Sowore',
+     ACCORD : 'Christopher Imumolen',
+     APC : 'Bola Ahmed Tinubu',
+     LP :'Peter Obi',
+     NNPP : 'Rabiu Kwankwaso',
+     PDP : 'Atiku Abubakar',
+}
+//  using the for...in enumeration method
+
+for (const key in presidentialCandidates) {
+    console.log(key);
+    console.log(presidentialCandidates[key] + '  is the presidential candidate of  ' + key);
+}
+
