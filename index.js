@@ -52,3 +52,31 @@ console.log(Musa);
 
 Object.assign(Musa , MusaScore);
 console.log({Musa});
+
+// QUESTON 4 - Ways we can clone an object
+// 1. Object.assign method example
+     const bMorin = {
+        sex : 'female',
+        height : '1.7m',
+        faveColor : 'Black',
+     }
+ console.log(bMorin);
+
+ const bMorin2 = {
+      height: '1.66m',
+ }
+ Object.assign(bMorin , bMorin2);
+ console.log(bMorin);
+
+
+//  Using spread syntax
+const bMorin3 = {...bMorin};
+ bMorin3.sex = 'Male';
+
+console.log({bMorin3});
+
+// using JSON.parse(JSON stringify ()) method
+
+const bMorin4 = JSON.parse(JSON.stringify(bMorin));
+  bMorin4.faveColor = 'Still Black';
+  console.log(bMorin4);
